@@ -1,0 +1,93 @@
+:root {
+    --ff-title: 'Big Shoulders Display', cursive;
+    --ff-subtitle: 'Lexend Deca', sans-serif;
+    --fw-title: 700;
+    --fw-subtitle: 400;
+    --fs-title: 40px;
+    --fs-subtitle: 15px;
+
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-cyan: hsl(184, 100%, 22%);
+    --clr-dark-cyan: hsl(179, 100%, 13%);
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --clr-light-grey: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--clr-light-grey);
+    background-color: var(--clr-light-grey);
+}
+
+h1 {
+    font-family: var(--ff-title);
+    font-weight: var(--fw-title);
+    font-size: var(--fs-title);
+}
+
+p {
+    font-family: var(--ff-subtitle);
+    font-weight: var(--fw-subtitle);
+    font-size: var(--fs-subtitle);
+    color: var(--clr-transparent-white);
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container-item {
+    padding: 46px;
+}
+
+.sedan {
+    background-color: var(--clr-orange);
+}
+
+.suv {
+    background-color: var(--clr-cyan);
+}
+
+.luxury {
+    background-color: var(--clr-dark-cyan);
+}
+
+.container-item-button {
+    border-style: none;
+    background-color: var(--clr-light-grey);
+    padding: 38px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 60px;
+    border-radius: 42px;
+}
+
+.container-item-button:hover {
+    border: 2px solid;
+    padding: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: var(--clr-light-grey);
+    color: var(--clr-light-grey);
+}
+
+.sedan-button:hover { background-color: var(--clr-orange); }
+.suv-button:hover { background-color: var(--clr-cyan); }
+.luxury-button:hover { background-color: var(--clr-dark-cyan); }
+
+.sedan-button { color: var(--clr-orange); }
+.suv-button { color: var(--clr-cyan); }
+.luxury-button { color: var(--clr-dark-cyan); }
